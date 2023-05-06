@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --orange-color: #dd761e;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* start customize color */
+.text-orange{
+    color:var(--orange-color);
+}
+.bg-orange{
+    background:var(--orange-color);
+}
+.bg-light{
+    background-color: rgb(245,245,245);
+}
+.border-orange{
+    border: 2px solid var(--orange-color);
+}
+.border-left-orange{
+    border-left: 2px solid var(--orange-color);
+}
+.hover-bg-orange:hover {
+    background-color: var(--orange-color);
+}
+.hover-text-orange:hover{
+    color: var(--orange-color);
+}
+.hover-border-orange:hover{
+    border:2px solid var(--orange-color);
+}
+.focus-border-orange:focus{
+    border:2px solid var(--orange-color);
+}
+/* end customize color */
+
+
+a.active{
+    color:var(--orange-color);
+}
+
+aside a:hover,aside .btn-logout:hover {
+    color: var(--orange-color) !important;
+}
+
+.cutomize-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    display:none;
+}
+
+.cutomize-scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: white;
+}
+
+.cutomize-scrollbar::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 100vh;
+}
+
+.cutomize-scrollbar:hover::-webkit-scrollbar {
+    display:block;
+}
+.position-sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right:0;
+}
+
+@media (min-width:768px) {
+    body {
+        margin-left: 70px;
+    }
+}
